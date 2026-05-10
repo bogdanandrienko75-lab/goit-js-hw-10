@@ -1,0 +1,58 @@
+.snackbar-wrapper {
+  padding: 3rem 0 4rem;
+}
+
+.snackbar-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 28px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(25, 25, 35, 0.12);
+}
+
+.form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form label,
+.form fieldset {
+  display: grid;
+  gap: 0.75rem;
+  font-weight: 600;
+}
+
+.form input[type='number'] {
+  min-height: 44px;
+  border-radius: 18px;
+  border: 1px solid #d1d5db;
+  padding: 0.85rem 1rem;
+}
+
+.form fieldset {
+  padding: 1rem 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 18px;
+}
+
+.form legend {
+  font-weight: 700;
+}
+
+.form button {
+  min-height: 48px;
+  border-radius: 18px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .form {
+    gap: 1rem;
+  }
+}

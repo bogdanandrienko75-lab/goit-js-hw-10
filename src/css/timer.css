@@ -1,0 +1,91 @@
+.timer-wrapper {
+  padding: 3rem 0 4rem;
+}
+
+.timer-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 28px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(25, 25, 35, 0.12);
+}
+
+.timer-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.timer-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.timer-form input {
+  min-height: 44px;
+  padding: 0.85rem 1rem;
+  border-radius: 18px;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+}
+
+.timer-form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timer-form button {
+  flex: 1 1 160px;
+  min-height: 44px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+}
+
+.timer-form button[data-action='start'] {
+  background: #2563eb;
+}
+
+.timer-form button[data-action='reset'] {
+  background: #6b7280;
+}
+
+.timer-display {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.timer-card .timer-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.timer-card .timer-label {
+  text-align: center;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.timer-message {
+  min-height: 1.5rem;
+  color: #111827;
+  margin-top: 1rem;
+}
+
+.timer-message--error {
+  color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  .timer-display {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

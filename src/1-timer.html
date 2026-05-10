@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+      highlight-act="active"
+    />
+
+    <main>
+      <section class="timer-wrapper">
+        <div class="container">
+          <div class="timer-card">
+            <form class="timer-form">
+              <label>
+                Оберіть дату та час
+                <input type="text" id="datetime-picker" />
+              </label>
+              <div class="timer-form-buttons">
+                <button type="button" data-start disabled>Start</button>
+              </div>
+            </form>
+            <div class="timer-display timer">
+              <div class="field">
+                <span class="value timer-value" data-days>00</span>
+                <span class="label timer-label">Days</span>
+              </div>
+              <div class="field">
+                <span class="value timer-value" data-hours>00</span>
+                <span class="label timer-label">Hours</span>
+              </div>
+              <div class="field">
+                <span class="value timer-value" data-minutes>00</span>
+                <span class="label timer-label">Minutes</span>
+              </div>
+              <div class="field">
+                <span class="value timer-value" data-seconds>00</span>
+                <span class="label timer-label">Seconds</span>
+              </div>
+            </div>
+            <load src="./partials/back-link.html" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/1-timer.js"></script>
+    <load src="./partials/footer.html" />
+  </body>
+</html>

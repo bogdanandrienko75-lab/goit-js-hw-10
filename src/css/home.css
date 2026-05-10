@@ -1,0 +1,35 @@
+.hero {
+  padding: 4rem 0 5rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 1.25rem;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
+.button--primary {
+  background: #2563eb;
+}
+
+.button--secondary {
+  background: #10b981;
+}
+
+@media (max-width: 640px) {
+  .home-actions {
+    flex-direction: column;
+  }
+}
