@@ -12,7 +12,7 @@ const refs = {
   seconds: document.querySelector('[data-seconds]'),
 };
 
-let selectedDate = null;
+refs.startBtn.disabled = true;
 let intervalId = null;
 
 function convertMs(ms) {
@@ -72,7 +72,6 @@ function onStartClick() {
 
     if (delta <= 0) {
       resetCountdown();
-      updateTimer({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       return;
     }
 
